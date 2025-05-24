@@ -74,12 +74,12 @@ export default function Contact() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-r from-primary-blue to-secondary-blue">
+      <section className="pt-24 pb-16 bg-gradient-to-r from-gray-900 to-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Get In Touch
           </h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Ready to transform your telecommunications infrastructure? Contact our expert team 
             for a free consultation and discover how we can help your business thrive.
           </p>
@@ -118,19 +118,7 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start">
-                  <div className="w-12 h-12 bg-light-blue rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                    <MapPin className="text-primary-blue" size={20} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-neutral-gray mb-1">Office</h3>
-                    <p className="text-gray-600">
-                      Level 15, 123 George Street<br />
-                      Sydney NSW 2000<br />
-                      Australia
-                    </p>
-                  </div>
-                </div>
+
 
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-light-blue rounded-lg flex items-center justify-center mr-4 flex-shrink-0">

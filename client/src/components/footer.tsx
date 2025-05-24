@@ -102,14 +102,7 @@ export default function Footer() {
                 <Mail className="mr-3 text-primary-blue" size={16} />
                 <span>contactus@networkspecialists.net.au</span>
               </div>
-              <div className="flex items-start">
-                <MapPin className="mr-3 mt-1 text-primary-blue" size={16} />
-                <span>
-                  Level 15, 123 George Street<br />
-                  Sydney NSW 2000<br />
-                  Australia
-                </span>
-              </div>
+
             </div>
           </div>
 
