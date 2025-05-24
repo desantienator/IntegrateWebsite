@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logoPath from "@assets/Integrat3f Logo Size Transparent.png";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,7 +37,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <img 
-              src="/attached_assets/Integrat3f Logo Size Transparent.png" 
+              src={logoPath} 
               alt="Integrate Logo" 
               className="h-8 w-auto"
             />
