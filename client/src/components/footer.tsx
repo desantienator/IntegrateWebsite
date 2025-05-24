@@ -99,10 +99,9 @@ export default function Footer() {
                 <span>1300 205 585</span>
               </div>
               <div className="flex items-center">
-                <Mail className="mr-3 text-primary-blue" size={16} />
-                <span>contactus@networkspecialists.net.au</span>
+                <Mail className="mr-3 text-primary-blue flex-shrink-0" size={16} />
+                <span className="break-all">contactus@networkspecialists.net.au</span>
               </div>
-
             </div>
           </div>
 
