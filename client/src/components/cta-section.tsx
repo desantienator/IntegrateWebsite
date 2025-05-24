@@ -11,7 +11,7 @@ export default function CtaSection() {
   };
 
   const handleCallNow = () => {
-    window.location.href = "tel:+61298765432";
+    window.location.href = "tel:1300205585";
   };
 
   return (
@@ -37,7 +37,7 @@ export default function CtaSection() {
             className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/10 transition-all duration-200 bg-transparent"
           >
             <Phone className="mr-2" size={20} />
-            Call (02) 9876 5432
+            Call 1300 205 585
           </Button>
         </div>
 

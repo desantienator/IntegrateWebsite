@@ -96,11 +96,11 @@ export default function Footer() {
             <div className="space-y-3 text-gray-300">
               <div className="flex items-center">
                 <Phone className="mr-3 text-primary-blue" size={16} />
-                <span>(02) 9876 5432</span>
+                <span>1300 205 585</span>
               </div>
               <div className="flex items-center">
                 <Mail className="mr-3 text-primary-blue" size={16} />
-                <span>hello@integrate.com.au</span>
+                <span>contactus@networkspecialists.net.au</span>
               </div>
               <div className="flex items-start">
                 <MapPin className="mr-3 mt-1 text-primary-blue" size={16} />
