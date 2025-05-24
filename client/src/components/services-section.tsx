@@ -112,15 +112,15 @@ export default function ServicesSection() {
         </div>
 
         {/* Additional Service: Security Solutions */}
-        <div className="bg-gradient-to-r from-primary-blue to-secondary-blue rounded-xl p-8 text-white">
+        <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl p-8 text-white">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-3xl font-bold mb-4">Advanced Security Solutions</h3>
-              <p className="text-blue-100 mb-6 leading-relaxed">
+              <p className="text-gray-200 mb-6 leading-relaxed">
                 Protect your business with enterprise-grade cybersecurity measures, network security protocols, 
                 and comprehensive threat monitoring designed for today's digital landscape.
               </p>
-              <Button className="bg-white text-primary-blue px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200">
+              <Button className="bg-primary-blue text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary-blue transition-colors duration-200">
                 Get Security Assessment
               </Button>
             </div>
