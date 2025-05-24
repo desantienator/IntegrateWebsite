@@ -1,13 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Phone, CheckCircle } from "lucide-react";
+import { useLocation } from "wouter";
 
 export default function CtaSection() {
+  const [, setLocation] = useLocation();
+
   const handleScheduleConsultation = () => {
-    // In a real app, this would open a scheduling modal or redirect to a booking page
-    const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    setLocation("/contact");
   };
 
   const handleCallNow = () => {

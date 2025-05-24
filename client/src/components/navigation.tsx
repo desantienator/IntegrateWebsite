@@ -2,10 +2,12 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logoPath from "@assets/Integrat3f Logo Size Transparent.png";
+import { useLocation } from "wouter";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [, setLocation] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,8 +27,7 @@ export default function Navigation() {
   };
 
   const handleScheduleConsultation = () => {
-    // In a real app, this would open a scheduling modal or redirect to a booking page
-    scrollToSection("contact");
+    setLocation("/contact");
   };
 
   return (

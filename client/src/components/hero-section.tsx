@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
+import { useLocation } from "wouter";
 
 export default function HeroSection() {
+  const [, setLocation] = useLocation();
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -33,7 +36,7 @@ export default function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
-              onClick={() => scrollToSection("contact")}
+              onClick={() => setLocation("/contact")}
               className="bg-white text-primary-blue px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-all duration-200 shadow-lg"
             >
               Get Started Today
