@@ -7,7 +7,7 @@ import { useLocation } from "wouter";
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [, setLocation] = useLocation();
+  const [location, setLocation] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,11 +19,22 @@ export default function Navigation() {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
+    if (location !== "/") {
+      setLocation(`/#${sectionId}`);
+      setIsMobileMenuOpen(false);
+      return;
+    }
+
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
       setIsMobileMenuOpen(false);
     }
+  };
+
+  const goToBlog = () => {
+    setLocation("/blog/world-cup-trip-command-centre");
+    setIsMobileMenuOpen(false);
   };
 
   const handleScheduleConsultation = () => {
@@ -64,6 +75,12 @@ export default function Navigation() {
                 className="text-neutral-gray hover:text-primary-blue transition-colors duration-200"
               >
                 About
+              </button>
+              <button 
+                onClick={goToBlog} 
+                className="text-neutral-gray hover:text-primary-blue transition-colors duration-200"
+              >
+                Blog
               </button>
               <button 
                 onClick={() => scrollToSection("contact")} 
@@ -119,6 +136,12 @@ export default function Navigation() {
               className="block px-3 py-2 text-neutral-gray hover:text-primary-blue w-full text-left"
             >
               About
+            </button>
+            <button 
+              onClick={goToBlog} 
+              className="block px-3 py-2 text-neutral-gray hover:text-primary-blue w-full text-left"
+            >
+              Blog
             </button>
             <button 
               onClick={() => scrollToSection("contact")} 
